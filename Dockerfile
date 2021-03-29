@@ -52,7 +52,7 @@ ENV PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 
 #Install cardano-node
-ARG TAG=1.24.2
+ARG TAG=1.25.1
 RUN git clone https://github.com/input-output-hk/cardano-node.git \
     && cd cardano-node \
     && git fetch --all --recurse-submodules --tags \

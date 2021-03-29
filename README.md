@@ -1,5 +1,4 @@
-# Cardano node Docker
-
+# Cardano Node 1.25.1 Docker
 
 ### Prerequisites
 
