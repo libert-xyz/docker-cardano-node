@@ -93,5 +93,5 @@ USER ${USERNAME}
 
 RUN mkdir /home/${USERNAME}/cardano-node/
 
-ENTRYPOINT ["cardano-cli"]
-CMD ["--version"]
+#ENTRYPOINT ["cardano-node"]
+#CMD ["cardano-node"]
