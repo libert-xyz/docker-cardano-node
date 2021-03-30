@@ -89,9 +89,8 @@ RUN groupadd -g $GROUPID -r $USERNAME \
   && chown -R ${USERID}:${GROUPID} /home/${USERNAME} \
   && echo ${USERNAME}:${USERNAME} | chpasswd
 
-USER ${USERNAME}
-
 RUN mkdir /home/${USERNAME}/cardano-node/
+WORKDIR /home/${USERNAME}/cardano-node/
 
 #ENTRYPOINT ["cardano-node"]
 #CMD ["cardano-node"]
